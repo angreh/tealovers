@@ -1,0 +1,110 @@
+#footer {
+    border-top: 1px solid #000000;
+    margin-top: 50px;
+    background-color: #eaeaea;
+    padding-bottom: 50px;
+    clear: both;
+}
+#footer:before {
+    content: ' ';
+    border-bottom: 1px solid #000000;
+    display: block;
+    height: 10px;
+    background-color: #F7F7F7;
+    margin-bottom: 30px;
+}
+.columns-wrapper:after {
+    content: ' ';
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+}
+@media (min-width: 1060px) {
+    .columns-wrapper:after {
+        content: ' ';
+        display: none;
+        clear: none;
+    }
+}
+
+.columns {
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    width: 255px;
+    margin-bottom: 30px;
+}
+@media (min-width: 690px){
+    .columns {
+        margin-bottom: 0;
+    }
+}
+.columns li.menu-item {
+    float: none;
+}
+.footer_title {
+    font-weight: 700;
+}
+#footer_sociais {
+    text-align: right;
+    border-top: 1px solid #000000;
+    padding-top: 20px;
+}
+@media (min-width: 1060px){
+    #footer_sociais {
+        border-top: none;
+        position: absolute;
+        right: 0;
+        float: none;
+        padding-top: 0;
+    }
+
+}
+.sitem {
+    height: 35px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-right: 45px;
+    padding-top: 10px;
+    letter-spacing: 0.3em;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+.inst {
+    background: url('../assets/imgs/footer_instaIcon.png') right no-repeat;
+}
+.face {
+    background: url('../assets/imgs/footer_faceIcon.png') right no-repeat;
+}
+.columns li.menu-item a {
+    text-transform: none;
+    letter-spacing: normal;
+}
+.politicas {
+    display: block;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    font-weight: 700;
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+.copyright {
+    text-align: center;
+}
+@media (min-width: 640px){
+    .politicas {
+        display: inline-block;
+        letter-spacing: 0.2em;
+        font-size: 0.8em;
+        font-weight: 700;
+    }
+    .copyright {
+        float: right;
+    }
+}
+#footer_dados {
+    text-align: center;
+    font-size: 0.8em;
+}

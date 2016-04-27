@@ -1,0 +1,231 @@
+/*
+Theme Name: TMZ Tea2 3.0
+Theme URI: https://example2.com
+Author: the WordPress team 2
+Author URI: http://tmzhub.com.br/tmztea2
+Description: wee
+Version: 3.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: TMZ Tea 3
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* BEGIN RESETS */
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,
+var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    /*font-family: inherit;*/
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+article, aside, details,
+figcaption figure, footer,
+header, main, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    quotes: none;
+}
+
+a:focus {
+    outline: 2px solid #c1c1c1;
+    outline: 2px solid rgba(51, 51, 51, 0.3);
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+a img {
+    border: 0;
+}
+
+/* END RESETS */
+
+/* BEGIN GERAL */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    
+    color: #302F4A;
+}
+html, body {
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+.container {
+    min-width: 310px;
+    position: relative;
+    margin: 0 20px;
+
+    clear: both;
+}
+/*@media (min-width: 800px){*/
+    /*.container {*/
+        /*width: 750px;*/
+    /*}*/
+/*}*/
+@media (min-width: 1100px) {
+    .container {
+        width: 1060px;
+        margin: 0 auto;
+    }
+}
+.small_container {
+    clear: both;
+    position: relative;
+    width: auto;
+
+    margin: 50px auto 0 auto;
+
+    font-size: 1.1em;
+    font-weight: 300;
+}
+@media (min-width: 900px) {
+    .small_container {
+        width: 820px;
+    }
+}
+.container_produtos_page {
+    clear: both;
+    position: relative;
+    width: auto;
+
+    margin: 50px auto 0 auto;
+
+    font-size: 1.1em;
+    font-weight: 300;
+}
+@media (min-width: 900px) {
+    .container_produtos_page {
+        width: 900px;
+    }
+}
+
+.small_container h2 {
+    font-size: 1.8em;
+    display: block;
+    margin: 20px 0 0 0;
+}
+.small_container small {
+    font-size: 0.8em;
+    display: block;
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #E35458;
+}
+.dashed_hr {
+    height: 1px;
+    background-image: url("assets/imgs/bg_dashed.gif");
+    width: 100%;
+    margin: 10px 0;
+    clear: both;
+}
+hr.produtos {
+    margin: 20px 0 5px 0;
+}
+p {
+    margin-bottom: 15px;
+}
+/* END GERAL */
+p.stock {
+    display: none;
+}
+/* loop blog */
+.loop-itens {
+    cursor: pointer;
+}
+.loop-itens {
+    position: relative;
+    margin-bottom: 30px;
+}
+@media (min-width: 900px) {
+    .container .loop-itens {
+        width: 31.33333%;
+        margin: 0 1%;
+        float: left;
+    }
+}
+
+.loop-itens img {
+    width: 100%;
+}
+.loop-titulo {
+    text-align: center;
+    padding: 20px;
+}
+.loop-titulo a {
+    font-size: 1.4em;
+}
+.loop-content {
+    margin-bottom: 30px;
+}
+.search_title {
+    font-size: 1.4em;
+    padding: 10px 0 30px 10px;
+}
